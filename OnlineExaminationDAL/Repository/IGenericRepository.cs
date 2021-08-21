@@ -10,7 +10,7 @@ namespace OnlineExaminationDAL.Repository
     public interface IGenericRepository<T>:IDisposable
     {
         IEnumerable<T> GetAll(
-            Expression<Func<Task, bool>> filter = null,
+            Expression<Func<T, bool>> filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeProperties = "");
 
