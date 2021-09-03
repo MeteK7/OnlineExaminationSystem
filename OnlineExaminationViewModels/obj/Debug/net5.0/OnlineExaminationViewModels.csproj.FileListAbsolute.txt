@@ -1,0 +1,15 @@
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\OnlineExaminationViewModels.deps.json
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\OnlineExaminationViewModels.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\ref\OnlineExaminationViewModels.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\OnlineExaminationViewModels.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\OnlineExaminationDAL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\bin\Debug\net5.0\OnlineExaminationDAL.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.csproj.AssemblyReference.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.AssemblyInfoInputs.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.AssemblyInfo.cs
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.csproj.CoreCompileInputs.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.csproj.CopyComplete
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\ref\OnlineExaminationViewModels.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationViewModels\obj\Debug\net5.0\OnlineExaminationViewModels.pdb

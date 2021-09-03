@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExaminationDAL", "OnlineExaminationDAL\OnlineExaminationDAL.csproj", "{227D5E4E-9712-40F5-B729-F99809E13A62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineExaminationDAL", "OnlineExaminationDAL\OnlineExaminationDAL.csproj", "{227D5E4E-9712-40F5-B729-F99809E13A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExaminationViewModels", "OnlineExaminationViewModels\OnlineExaminationViewModels.csproj", "{0D37C3B8-FE63-4FC5-A8D0-041454748B43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{227D5E4E-9712-40F5-B729-F99809E13A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227D5E4E-9712-40F5-B729-F99809E13A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227D5E4E-9712-40F5-B729-F99809E13A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D37C3B8-FE63-4FC5-A8D0-041454748B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D37C3B8-FE63-4FC5-A8D0-041454748B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D37C3B8-FE63-4FC5-A8D0-041454748B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D37C3B8-FE63-4FC5-A8D0-041454748B43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
