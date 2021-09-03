@@ -15,7 +15,7 @@ namespace OnlineExaminationDAL
         public string Contact { get; set; }
         public string CVFileName { get; set; }
         public string PictureFileName { get; set; }
-        public int GroupsId { get; set; }
+        public int? GroupsId { get; set; }
         public Groups Groups { get; set; }
         public ICollection<ExamResults> ExamResults { get; set; } = new HashSet<ExamResults>();
     }

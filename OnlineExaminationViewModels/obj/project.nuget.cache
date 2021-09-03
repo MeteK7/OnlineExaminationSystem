@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9QfTtvvexY+kOMW7FUl4TPtoWTKXGVbcGue5wGJ3SELl2ItI6Vn4TcOw+CDznbnnHPzwHQYu/EMJ1koKJQCTCQ==",
+  "dgSpecHash": "cq535SB+E6pwS0ixP8TFxFkUvpEqPC4wRXUs3lIx2gC9ecB/+Q3KJUh0CkbVT6XBZ9ZZLgC9GNZQHHRV8BcZgw==",
   "success": true,
   "projectFilePath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.8\\microsoft.entityframeworkcore.abstractions.5.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.8\\microsoft.entityframeworkcore.analyzers.5.0.8.nupkg.sha512",
@@ -14,10 +15,11 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

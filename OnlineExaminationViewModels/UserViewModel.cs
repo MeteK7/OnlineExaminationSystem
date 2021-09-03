@@ -19,15 +19,15 @@ namespace OnlineExaminationViewModels
             Role = user.Role;
         }
 
-        public Users ConvertViewModel(UserViewModel userViewModel)
+        public Users ConvertViewModel(UserViewModel userVM)
         {
             return new Users
             {
-                Id = userViewModel.Id,
-                Name = userViewModel.Name ?? "",
-                UserName = userViewModel.UserName,
-                Password = userViewModel.Password,
-                Role = userViewModel.Role
+                Id = userVM.Id,
+                Name = userVM.Name ?? "",
+                UserName = userVM.UserName,
+                Password = userVM.Password,
+                Role = userVM.Role
             };
         }
 
