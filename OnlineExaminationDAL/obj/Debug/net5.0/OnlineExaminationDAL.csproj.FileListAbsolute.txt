@@ -10,3 +10,15 @@ F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\Online
 F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.dll
 F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\ref\OnlineExaminationDAL.dll
 F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.deps.json
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\ref\OnlineExaminationDAL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.csproj.AssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\ref\OnlineExaminationDAL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.pdb
