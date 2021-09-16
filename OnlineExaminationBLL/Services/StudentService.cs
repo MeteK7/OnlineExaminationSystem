@@ -82,7 +82,29 @@ namespace OnlineExaminationBLL.Services
 
         public IEnumerable<ResultViewModel> GetExamResults(int studentId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var examResults = _unitOfWork.GenericRepository<ExamResults>().GetAll()
+                    .Where(a => a.StudentsId == studentId);
+                var students = _unitOfWork.GenericRepository<Students>().GetAll();
+                var exams = _unitOfWork.GenericRepository<ExamResults>().GetAll();
+                var qnAs = _unitOfWork.GenericRepository<QnAs>().GetAll();
+                var requiredData = examResults.Join(students, er => er.StudentsId, s => s.Id,
+                    (er, st) => new { er, st }).Join(exams, erj => erj.er.ExamsId, ex => ex.Id,
+                    (erj, ex) => new { erj, ex }).Join(qnAs, exj => exj.erj.er.QnAsId, q => q.Id,
+                    (exj, q) => new ResultViewModel()
+                    {
+
+                    });
+
+                return requiredData;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+
+            return Enumerable.Empty<ResultViewModel>();
         }
 
         public StudentViewModel GetStudentDetails(int studentId)
