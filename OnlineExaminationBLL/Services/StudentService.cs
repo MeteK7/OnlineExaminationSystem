@@ -21,14 +21,53 @@ namespace OnlineExaminationBLL.Services
             _iLogger = iLogger;
         }
 
-        public Task<StudentViewModel> AddAsync(StudentViewModel studentViewModel)
+        public async Task<StudentViewModel> AddAsync(StudentViewModel studentVM)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Students students = studentVM.ConvertViewModel(studentVM);
+                await _unitOfWork.GenericRepository<Students>().AddAsync(students);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            return studentVM;
         }
 
         public PagedResult<StudentViewModel> GetAll(int pageNumber, int pageSize)
         {
-            throw new NotImplementedException();
+            var studentVM = new StudentViewModel();
+
+            try
+            {
+                int excludeRecords = (pageSize * pageNumber) - pageSize;
+                List<StudentViewModel> detailList = new List<StudentViewModel>();
+                var modelList = _unitOfWork.GenericRepository<Students>().GetAll()
+                    .Skip(excludeRecords).Take(pageSize).ToList();
+                var totalCount = _unitOfWork.GenericRepository<Students>().GetAll().ToList();
+                detailList = GroupListInfo(modelList);
+                if (detailList!=null)
+                {
+                    studentVM.StudentList = detailList;
+                    studentVM.TotalCount = totalCount.Count();
+                }
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+
+            var result = new PagedResult<StudentViewModel>
+            {
+                Data = studentVM.StudentList,
+                TotalItems = studentVM.TotalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+
+            return result;
         }
 
         public IEnumerable<Students> GetAllStudents()
