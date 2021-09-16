@@ -70,6 +70,11 @@ namespace OnlineExaminationBLL.Services
             return result;
         }
 
+        public List<StudentViewModel> GroupListInfo(List<Students> modelList)
+        {
+            return modelList.Select(o => new StudentViewModel(o)).ToList();
+        }
+
         public IEnumerable<Students> GetAllStudents()
         {
             throw new NotImplementedException();
@@ -82,7 +87,16 @@ namespace OnlineExaminationBLL.Services
 
         public StudentViewModel GetStudentDetails(int studentId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var student = _unitOfWork.GenericRepository<Students>().GetById(studentId);
+                return student != null ? new StudentViewModel(student) : null;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return null;
         }
 
         public bool SetExamResult(AttendExamViewModel attendExamViewModel)
