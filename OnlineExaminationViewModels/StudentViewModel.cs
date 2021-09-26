@@ -11,6 +11,10 @@ namespace OnlineExaminationViewModels
 {
     public class StudentViewModel
     {
+        public StudentViewModel()
+        {
+
+        }
         public int Id { get; set; }
 
         [Required]

@@ -181,7 +181,19 @@ namespace OnlineExaminationBLL.Services
 
         public Task<StudentViewModel> UpdateAsync(StudentViewModel studentViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Students student = _unitOfWork.GenericRepository<Students>().GetById(studentViewModel.Id);
+                student.Name = studentViewModel.Name;
+                student.UserName = studentViewModel.UserName;
+                student.PictureFileName = studentViewModel.PictureFileName != null ?
+                    studentViewModel.PictureFileName : student.PictureFileName;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
