@@ -127,7 +127,26 @@ namespace OnlineExaminationBLL.Services
 
         public bool SetExamResult(AttendExamViewModel attendExamViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                foreach (var item in attendExamViewModel.QnAs)
+                {
+                    ExamResults examResults = new ExamResults();
+                    examResults.StudentsId = attendExamViewModel.StudentId;
+                    examResults.QnAsId = item.Id;
+                    examResults.ExamsId = item.ExamsId;
+                    examResults.Answer = item.SelectedAnswer;
+                    _unitOfWork.GenericRepository<ExamResults>().AddAsync(examResults);
+                }
+                _unitOfWork.Save();
+                return true;
+            }
+
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return false;
         }
 
         public bool SetGroupIdToStudents(GroupViewModel groupViewModel)
