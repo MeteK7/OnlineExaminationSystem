@@ -94,7 +94,11 @@ namespace OnlineExaminationBLL.Services
                     (erj, ex) => new { erj, ex }).Join(qnAs, exj => exj.erj.er.QnAsId, q => q.Id,
                     (exj, q) => new ResultViewModel()
                     {
-
+                        StudentId=studentId,
+                        ExamName=exj.ex.Title,
+                        TotalQuestion=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId==exj.ex.Id),
+                        CorrectAnswer=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId=exj.ex.Id && a.Answer==q.Answer),
+                        WrongAnswer=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId==exj.ex.Id && a.Answer!=q.Answer)
                     });
 
                 return requiredData;

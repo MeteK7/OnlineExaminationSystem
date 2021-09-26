@@ -1,0 +1,5 @@
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.AssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.CoreCompileInputs.cache
