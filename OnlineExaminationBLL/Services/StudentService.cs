@@ -151,7 +151,32 @@ namespace OnlineExaminationBLL.Services
 
         public bool SetGroupIdToStudents(GroupViewModel groupViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                foreach (var item in groupViewModel.StudentCheckList)
+                {
+                    var student = _unitOfWork.GenericRepository<Students>().GetById(item.Id);
+                    if (item.Selected)
+                    {
+                        student.GroupsId = groupViewModel.Id;
+                        _unitOfWork.GenericRepository<Students>().Update(student);
+                    }
+                    else
+                    {
+                        if (student.GroupsId==groupViewModel.Id)
+                        {
+                            student.GroupsId = null;
+                        }
+                    }
+                    _unitOfWork.Save();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return false;
         }
 
         public Task<StudentViewModel> UpdateAsync(StudentViewModel studentViewModel)

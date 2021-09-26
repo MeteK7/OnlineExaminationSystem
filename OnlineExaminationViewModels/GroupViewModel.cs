@@ -20,6 +20,7 @@ namespace OnlineExaminationViewModels
         public int UsersId { get; set; }
         public List<GroupViewModel> GroupList { get; set; }
         public int TotalCount { get; set; }
+        public List<StudentCheckBoxListViewModel> StudentCheckList { get; set; }
         public GroupViewModel(Groups group)
         {
             Id = group.Id;
