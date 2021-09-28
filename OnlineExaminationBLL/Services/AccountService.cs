@@ -23,7 +23,24 @@ namespace OnlineExaminationBLL.Services
 
         public bool AddTeacher(UserViewModel userViewModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Users usr = new Users()
+                {
+                    Name = userViewModel.Name,
+                    UserName = userViewModel.UserName,
+                    Password = userViewModel.Password,
+                    Role = (int)Roles.Teacher
+                };
+                _unitOfWork.GenericRepository<Users>().AddAsync(usr);
+                _unitOfWork.Save();
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+                return false;
+            }
+            return true;
         }
 
         public PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize)
@@ -57,7 +74,7 @@ namespace OnlineExaminationBLL.Services
 
         private List<UserViewModel> ListInfo(List<Users> modelList)
         {
-            throw new NotImplementedException();
+            return modelList.Select(o => new UserViewModel(o)).ToList();
         }
 
         public LoginViewModel Login(LoginViewModel loginVM)
