@@ -43,9 +43,16 @@ namespace OnlineExaminationBLL.Services
             }
             catch (Exception ex)
             {
-
-                throw;
+                _iLogger.LogError(ex.Message);
             }
+            var results = new PagedResult<UserViewModel>
+            {
+                Data = model.UserList,
+                TotalItems = model.TotalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+            return results;
         }
 
         private List<UserViewModel> ListInfo(List<Users> modelList)
