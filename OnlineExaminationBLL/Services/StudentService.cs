@@ -77,7 +77,16 @@ namespace OnlineExaminationBLL.Services
 
         public IEnumerable<Students> GetAllStudents()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var students = _unitOfWork.GenericRepository<Students>().GetAll();
+                return students;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return Enumerable.Empty<Students>();
         }
 
         public IEnumerable<ResultViewModel> GetExamResults(int studentId)
@@ -189,10 +198,9 @@ namespace OnlineExaminationBLL.Services
                 student.PictureFileName = studentViewModel.PictureFileName != null ?
                     studentViewModel.PictureFileName : student.PictureFileName;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                _iLogger.LogError(ex.Message);
             }
         }
     }
