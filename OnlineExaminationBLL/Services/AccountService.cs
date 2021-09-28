@@ -1,4 +1,5 @@
-﻿using OnlineExaminationDAL;
+﻿using Microsoft.Extensions.Logging;
+using OnlineExaminationDAL;
 using OnlineExaminationDAL.UnitOfWork;
 using OnlineExaminationViewModels;
 using System;
@@ -12,10 +13,14 @@ namespace OnlineExaminationBLL.Services
     public class AccountService : IAccountService
     {
         IUnitOfWork _unitOfWork;
-        public AccountService()
-        {
+        ILogger<StudentService> _iLogger;
 
+        public AccountService(IUnitOfWork unitOfWork, ILogger<StudentService> iLogger)
+        {
+            _unitOfWork = unitOfWork;
+            _iLogger = iLogger;
         }
+
         public bool AddTeacher(UserViewModel userViewModel)
         {
             throw new NotImplementedException();
@@ -32,10 +37,11 @@ namespace OnlineExaminationBLL.Services
                 detailList = ListInfo(modelList);
                 if (detailList!=null)
                 {
-                    model.
+                    model.UserList = detailList;
+                    model.TotalCount = _unitOfWork.GenericRepository<Users>().GetAll().Count(x => x.Role == (int)Roles.Teacher);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw;

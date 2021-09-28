@@ -50,5 +50,6 @@ namespace OnlineExaminationViewModels
 
         public int Role { get; set; }
         public List<UserViewModel> UserList { get; set; }
+        public int TotalCount { get; set; }
     }
 }
