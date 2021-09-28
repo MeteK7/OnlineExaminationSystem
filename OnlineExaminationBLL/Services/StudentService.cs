@@ -188,7 +188,7 @@ namespace OnlineExaminationBLL.Services
             return false;
         }
 
-        public Task<StudentViewModel> UpdateAsync(StudentViewModel studentViewModel)
+        public async Task<StudentViewModel> UpdateAsync(StudentViewModel studentViewModel)
         {
             try
             {
@@ -197,11 +197,16 @@ namespace OnlineExaminationBLL.Services
                 student.UserName = studentViewModel.UserName;
                 student.PictureFileName = studentViewModel.PictureFileName != null ?
                     studentViewModel.PictureFileName : student.PictureFileName;
+                student.CVFileName = studentViewModel.CVFileName != null ? studentViewModel.CVFileName : student.CVFileName;
+                student.Contact = studentViewModel.Contact;
+                await _unitOfWork.GenericRepository<Students>().UpdateAsync(student);
+                _unitOfWork.Save();
             }
             catch (Exception ex)
             {
                 _iLogger.LogError(ex.Message);
             }
+            return studentViewModel;
         }
     }
 }
