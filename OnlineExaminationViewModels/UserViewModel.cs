@@ -10,6 +10,10 @@ namespace OnlineExaminationViewModels
 {
     public class UserViewModel
     {
+        public UserViewModel()
+        {
+
+        }
         public UserViewModel(Users user)
         {
             Id = user.Id;
@@ -45,5 +49,6 @@ namespace OnlineExaminationViewModels
         public string Password { get; set; }
 
         public int Role { get; set; }
+        public List<UserViewModel> UserList { get; set; }
     }
 }
