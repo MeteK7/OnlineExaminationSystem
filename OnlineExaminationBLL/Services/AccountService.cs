@@ -21,7 +21,28 @@ namespace OnlineExaminationBLL.Services
             throw new NotImplementedException();
         }
 
-        public PagedResult<UserViewModel> GetAllTeacher(int pageNumber, int pageSize)
+        public PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize)
+        {
+            var model = new UserViewModel();
+            try
+            {
+                int ExcludeRecords = (pageSize * pageNumber) - pageSize;
+                List<UserViewModel> detailList = new List<UserViewModel>();
+                var modelList = _unitOfWork.GenericRepository<Users>().GetAll().Where(x => x.Role == (int)Roles.Teacher).Skip(ExcludeRecords).Take(pageSize).ToList();
+                detailList = ListInfo(modelList);
+                if (detailList!=null)
+                {
+                    model.
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private List<UserViewModel> ListInfo(List<Users> modelList)
         {
             throw new NotImplementedException();
         }
