@@ -1,4 +1,5 @@
-﻿using OnlineExaminationDAL.UnitOfWork;
+﻿using OnlineExaminationDAL;
+using OnlineExaminationDAL.UnitOfWork;
 using OnlineExaminationViewModels;
 using System;
 using System.Collections.Generic;
@@ -25,9 +26,32 @@ namespace OnlineExaminationBLL.Services
             throw new NotImplementedException();
         }
 
-        public LoginViewModel Login(LoginViewModel loginViewModel)
+        public LoginViewModel Login(LoginViewModel loginVM)
         {
-            throw new NotImplementedException();
+            if (loginVM.Role==(int)Roles.Admin || loginVM.Role==(int)Roles.Teacher)
+            {
+                var user = _unitOfWork.GenericRepository<Users>().GetAll()
+                    .FirstOrDefault(a => a.UserName == loginVM.UserName.Trim() 
+                    && a.Password == loginVM.Password.Trim() 
+                    && a.Role == loginVM.Role);
+
+                if (user!=null)
+                {
+                    loginVM.Id = user.Id;
+                    return loginVM;
+                }
+            }
+            else
+            {
+                var student = _unitOfWork.GenericRepository<Students>().GetAll()
+                    .FirstOrDefault(a => a.UserName == loginVM.UserName.Trim() && a.Password == loginVM.Password.Trim());
+                if (student!=null)
+                {
+                    loginVM.Id = student.Id;
+                }
+                return loginVM;
+            }
+            return null;
         }
     }
 }
