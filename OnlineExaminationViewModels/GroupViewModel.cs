@@ -10,6 +10,10 @@ namespace OnlineExaminationViewModels
 {
     public class GroupViewModel
     {
+        public GroupViewModel()
+        {
+
+        }
         public int Id { get; set; }
         [Required]
         [Display(Name="Group Name")]

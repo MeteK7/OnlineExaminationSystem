@@ -76,12 +76,30 @@ namespace OnlineExaminationBLL.Services
 
         public IEnumerable<Groups> GetAllGroups()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var groups = _unitOfWork.GenericRepository<Groups>().GetAll();
+                return groups;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return Enumerable.Empty<Groups>();
         }
 
         public GroupViewModel GetById(int groupId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var group = _unitOfWork.GenericRepository<Groups>().GetById(groupId);
+                return new GroupViewModel(group);
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return null;
         }
     }
 }
