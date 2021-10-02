@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OnlineExaminationBLL.Services;
+using OnlineExaminationDAL.Data;
+using OnlineExaminationDAL.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +28,13 @@ namespace OnlineExaminationWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IGroupService, GroupService>();
+            services.AddTransient<IStudentService, StudentService>();
+            services.AddTransient<IExamService, ExamService>();
+            services.AddTransient<IQuestionAnswerService, QuestionAnswerService>();
+            services.AddTransient<IAccountService, AccountService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

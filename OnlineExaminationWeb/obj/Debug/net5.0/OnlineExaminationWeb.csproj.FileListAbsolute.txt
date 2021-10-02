@@ -1,0 +1,8 @@
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.csproj.AssemblyReference.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.AssemblyInfoInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.AssemblyInfo.cs
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.RazorAssemblyInfo.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.RazorAssemblyInfo.cs
