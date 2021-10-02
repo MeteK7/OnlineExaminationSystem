@@ -90,7 +90,16 @@ namespace OnlineExaminationBLL.Services
 
         public bool IsExamAttended(int examId, int studentId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var questionAnswerRecord = _unitOfWork.GenericRepository<ExamResults>().GetAll().FirstOrDefault(x => x.ExamsId == examId && x.StudentsId == studentId);
+                return questionAnswerRecord == null ? false : true;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return false;
         }
     }
 }
