@@ -38,6 +38,39 @@ namespace OnlineExaminationBLL.Services
 
         public PagedResult<QuestionAnswerViewModel> GetAll(int pageNumber, int pageSize)
         {
+            var model = new QuestionAnswerViewModel();
+
+            try
+            {
+                int ExcludeRecords = (pageSize * pageNumber) - pageSize;
+                List<QuestionAnswerViewModel> detailList = new List<QuestionAnswerViewModel>();
+                var modelList = _unitOfWork.GenericRepository<QuestionAnswers>().GetAll().Skip(ExcludeRecords).Take(pageSize).ToList();
+                var totalCount = _unitOfWork.GenericRepository<QuestionAnswers>().GetAll().ToList();
+                detailList = ExamListInfo(modelList);
+                if (detailList != null)
+                {
+                    model.QuestionAnswerList = detailList;
+                    model.TotalCount = totalCount.Count();
+                }
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+                throw;
+            }
+
+            var result = new PagedResult<QuestionAnswerViewModel>
+            {
+                Data = model.QuestionAnswerList,
+                TotalItems = model.TotalCount,
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+            return result;
+        }
+
+        private List<QuestionAnswerViewModel> ExamListInfo(List<QuestionAnswers> modelList)
+        {
             throw new NotImplementedException();
         }
 

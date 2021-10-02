@@ -10,6 +10,10 @@ namespace OnlineExaminationViewModels
 {
     public class QuestionAnswerViewModel
     {
+        public QuestionAnswerViewModel()
+        {
+
+        }
         public int Id { get; set; }
         [Required]
         [Display(Name="Exam")]
@@ -37,26 +41,26 @@ namespace OnlineExaminationViewModels
         [Display(Name = "Option 4")]
         public string Option4 { get; set; }
 
-        public List<QuestionAnswerViewModel> QnAsList { get; set; }
+        public List<QuestionAnswerViewModel> QuestionAnswerList { get; set; }
         public IEnumerable<Exams> ExamList { get; set; }
         public int TotalCount { get; set; }
         public int SelectedAnswer { get; set; }
 
-        public QuestionAnswerViewModel(QnAs qnAs)
+        public QuestionAnswerViewModel(QuestionAnswers questionAnswers)
         {
-            Id = qnAs.Id;
-            ExamsId = qnAs.ExamsId;
-            Question = qnAs.Question ?? "";
-            Option1 = qnAs.Option1 ?? "";
-            Option2 = qnAs.Option2 ?? "";
-            Option3 = qnAs.Option3 ?? "";
-            Option4 = qnAs.Option4 ?? "";
-            Answer = qnAs.Answer;
+            Id = questionAnswers.Id;
+            ExamsId = questionAnswers.ExamsId;
+            Question = questionAnswers.Question ?? "";
+            Option1 = questionAnswers.Option1 ?? "";
+            Option2 = questionAnswers.Option2 ?? "";
+            Option3 = questionAnswers.Option3 ?? "";
+            Option4 = questionAnswers.Option4 ?? "";
+            Answer = questionAnswers.Answer;
         }
 
-        public QnAs ConvertViewModel(QuestionAnswerViewModel qnAsViewModel)
+        public QuestionAnswers ConvertViewModel(QuestionAnswerViewModel qnAsViewModel)
         {
-            return new QnAs
+            return new QuestionAnswers
             {
                 Id = qnAsViewModel.Id,
                 ExamsId = qnAsViewModel.ExamsId,
