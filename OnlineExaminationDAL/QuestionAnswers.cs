@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnlineExaminationDAL
 {
-    public class QnAs
+    public class QuestionAnswers
     {
         public int Id { get; set; }
         public int ExamsId { get; set; }

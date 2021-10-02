@@ -97,7 +97,7 @@ namespace OnlineExaminationBLL.Services
                     .Where(a => a.StudentsId == studentId);
                 var students = _unitOfWork.GenericRepository<Students>().GetAll();
                 var exams = _unitOfWork.GenericRepository<ExamResults>().GetAll();
-                var qnAs = _unitOfWork.GenericRepository<QnAs>().GetAll();
+                var qnAs = _unitOfWork.GenericRepository<QuestionAnswer>().GetAll();
                 var requiredData = examResults.Join(students, er => er.StudentsId, s => s.Id,
                     (er, st) => new { er, st }).Join(exams, erj => erj.er.ExamsId, ex => ex.Id,
                     (erj, ex) => new { erj, ex }).Join(qnAs, exj => exj.erj.er.QnAsId, q => q.Id,

@@ -16,7 +16,7 @@ namespace OnlineExaminationDAL.Data
         public DbSet<ExamResults> ExamResults { get; set; }
         public DbSet<Exams> Exams { get; set; }
         public DbSet<Groups> Groups { get; set; }
-        public DbSet<QnAs> QnAs { get; set; }
+        public DbSet<QuestionAnswers> QnAs { get; set; }
         public DbSet<Students> Students { get; set; }
         public DbSet<Users> Users { get; set; }
 
@@ -40,7 +40,7 @@ namespace OnlineExaminationDAL.Data
                 entity.HasOne(d => d.Groups).WithMany(p => p.Students).HasForeignKey(d => d.GroupsId);
             });
 
-            modelBuilder.Entity<QnAs>(entity =>
+            modelBuilder.Entity<QuestionAnswers>(entity =>
             {
                 entity.Property(e => e.Question).IsRequired();
                 entity.Property(e => e.Option1).IsRequired().HasMaxLength(100);

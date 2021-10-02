@@ -16,6 +16,6 @@ namespace OnlineExaminationDAL
         public int GroupsId { get; set; }
         public Groups Groups { get; set; }
         public ICollection<ExamResults> ExamResults { get; set; } = new HashSet<ExamResults>();
-        public ICollection<QnAs> QnAs { get; set; } = new HashSet<QnAs>();
+        public ICollection<QuestionAnswers> QnAs { get; set; } = new HashSet<QuestionAnswers>();
     }
 }

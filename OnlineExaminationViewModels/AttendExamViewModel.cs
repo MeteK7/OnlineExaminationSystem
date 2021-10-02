@@ -10,7 +10,7 @@ namespace OnlineExaminationViewModels
     {
         public int StudentId { get; set; }
         public string ExamName { get; set; }
-        public List<QnAsViewModel> QnAs { get; set; }
+        public List<QuestionAnswerViewModel> QnAs { get; set; }
         public string Message { get; set; }
     }
 }

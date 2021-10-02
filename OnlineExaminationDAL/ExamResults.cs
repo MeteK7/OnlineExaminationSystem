@@ -14,7 +14,7 @@ namespace OnlineExaminationDAL
         public int? ExamsId { get; set; }
         public Exams Exams { get; set; }
         public int QnAsId { get; set; }
-        public QnAs QnAs { get; set; }
+        public QuestionAnswers QnAs { get; set; }
         public int Answer { get; set; }
     }
 }

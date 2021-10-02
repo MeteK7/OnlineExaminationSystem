@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnlineExaminationViewModels
 {
-    public class QnAsViewModel
+    public class QuestionAnswerViewModel
     {
         public int Id { get; set; }
         [Required]
@@ -37,12 +37,12 @@ namespace OnlineExaminationViewModels
         [Display(Name = "Option 4")]
         public string Option4 { get; set; }
 
-        public List<QnAsViewModel> QnAsList { get; set; }
+        public List<QuestionAnswerViewModel> QnAsList { get; set; }
         public IEnumerable<Exams> ExamList { get; set; }
         public int TotalCount { get; set; }
         public int SelectedAnswer { get; set; }
 
-        public QnAsViewModel(QnAs qnAs)
+        public QuestionAnswerViewModel(QnAs qnAs)
         {
             Id = qnAs.Id;
             ExamsId = qnAs.ExamsId;
@@ -54,7 +54,7 @@ namespace OnlineExaminationViewModels
             Answer = qnAs.Answer;
         }
 
-        public QnAs ConvertViewModel(QnAsViewModel qnAsViewModel)
+        public QnAs ConvertViewModel(QuestionAnswerViewModel qnAsViewModel)
         {
             return new QnAs
             {
