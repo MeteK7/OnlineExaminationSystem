@@ -46,7 +46,7 @@ namespace OnlineExaminationBLL.Services
                 List<QuestionAnswerViewModel> detailList = new List<QuestionAnswerViewModel>();
                 var modelList = _unitOfWork.GenericRepository<QuestionAnswers>().GetAll().Skip(ExcludeRecords).Take(pageSize).ToList();
                 var totalCount = _unitOfWork.GenericRepository<QuestionAnswers>().GetAll().ToList();
-                detailList = ExamListInfo(modelList);
+                detailList = ListInfo(modelList);
                 if (detailList != null)
                 {
                     model.QuestionAnswerList = detailList;
@@ -69,14 +69,23 @@ namespace OnlineExaminationBLL.Services
             return result;
         }
 
-        private List<QuestionAnswerViewModel> ExamListInfo(List<QuestionAnswers> modelList)
+        private List<QuestionAnswerViewModel> ListInfo(List<QuestionAnswers> modelList)
         {
-            throw new NotImplementedException();
+            return modelList.Select(o => new QuestionAnswerViewModel(o)).ToList();
         }
 
-        public IEnumerable<QuestionAnswerViewModel> GetAllQuestionAnswers(int examId)
+        public IEnumerable<QuestionAnswerViewModel> GetAllQuestionAnswersByExamId(int examId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var questionAnswerList = _unitOfWork.GenericRepository<QuestionAnswers>().GetAll().Where(x=>x.ExamsId==examId);
+                return ListInfo(questionAnswerList.ToList());
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return Enumerable.Empty<QuestionAnswerViewModel>();
         }
 
         public bool IsExamAttended(int examId, int studentId)

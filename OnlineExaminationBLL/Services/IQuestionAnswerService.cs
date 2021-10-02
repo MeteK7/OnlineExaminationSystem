@@ -11,7 +11,7 @@ namespace OnlineExaminationBLL.Services
     {
         PagedResult<QuestionAnswerViewModel> GetAll(int pageNumber, int pageSize);
         Task<QuestionAnswerViewModel> AddAsync(QuestionAnswerViewModel questionAnswerVM);
-        IEnumerable<QuestionAnswerViewModel> GetAllQuestionAnswers(int examId);
+        IEnumerable<QuestionAnswerViewModel> GetAllQuestionAnswersByExamId(int examId);
         bool IsExamAttended(int examId, int studentId);
     }
 }
