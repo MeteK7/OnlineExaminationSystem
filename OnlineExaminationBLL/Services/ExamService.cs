@@ -71,12 +71,21 @@ namespace OnlineExaminationBLL.Services
 
         private List<ExamViewModel> ExamListInfo(List<Exams> modelList)
         {
-            throw new NotImplementedException();
+            return modelList.Select(o => new ExamViewModel(o)).ToList();
         }
 
         public IEnumerable<Exams> GetAllExams()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var exams = _unitOfWork.GenericRepository<Exams>().GetAll();
+                return exams;
+            }
+            catch (Exception ex)
+            {
+                _iLogger.LogError(ex.Message);
+            }
+            return Enumerable.Empty<Exams>();
         }
     }
 }
