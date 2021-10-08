@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineExaminationDAL\OnlineExaminationDAL.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineExaminationBLL\OnlineExaminationBLL.csproj" />
+    <ProjectReference Include="..\OnlineExaminationViewModels\OnlineExaminationViewModels.csproj" />
   </ItemGroup>
 
 </Project>
