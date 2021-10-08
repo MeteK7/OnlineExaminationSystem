@@ -43,12 +43,27 @@ namespace OnlineExaminationWeb.Controllers
             if (ModelState.IsValid)
             {
                 LoginViewModel loginVM = _accountService.Login(loginViewModel);
-                if (loginVM!=null)
+                if (loginVM != null)
                 {
                     HttpContext.Session.Set<LoginViewModel>("loginvm", loginVM);
-                    return RedirectUser();
+                    return RedirectUser(loginVM);
                 }
             }
+            else
+                return View(loginViewModel);
+        }
+
+        private IActionResult RedirectUser(LoginViewModel loginViewModel)
+        {
+            if (loginViewModel.Role==(int)Roles.Admin)
+            {
+                return RedirectToAction("Index", "Users");
+            }
+            else if (loginViewModel.Role==(int)Roles.Teacher)
+            {
+                return RedirectToAction("Index", "Exams");
+            }
+            return RedirectToAction("Profile", "Students");
         }
 
         public IActionResult Index()
