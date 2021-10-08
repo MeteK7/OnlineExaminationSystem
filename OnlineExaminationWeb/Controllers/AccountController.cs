@@ -30,6 +30,27 @@ namespace OnlineExaminationWeb.Controllers
             }
         }
 
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Set<LoginViewModel>("loginvm", null);
+            return RedirectToAction("Login");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login(LoginViewModel loginViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                LoginViewModel loginVM = _accountService.Login(loginViewModel);
+                if (loginVM!=null)
+                {
+                    HttpContext.Session.Set<LoginViewModel>("loginvm", loginVM);
+                    return RedirectUser();
+                }
+            }
+        }
+
         public IActionResult Index()
         {
             return View();
