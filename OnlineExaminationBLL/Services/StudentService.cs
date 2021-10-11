@@ -138,7 +138,7 @@ namespace OnlineExaminationBLL.Services
         {
             try
             {
-                foreach (var item in attendExamViewModel.QnAs)
+                foreach (var item in attendExamViewModel.QuestionAnswer)
                 {
                     ExamResults examResults = new ExamResults();
                     examResults.StudentsId = attendExamViewModel.StudentId;
