@@ -60,10 +60,20 @@ namespace OnlineExaminationWeb.Controllers
                 {
                     if (!_questionAnswerService.IsExamAttended(todayExam.Id,attendExamVM.StudentId))
                     {
-
+                        attendExamVM.QuestionAnswer = _questionAnswerService.GetAllQuestionAnswersByExamId(todayExam.Id).ToList();
+                        attendExamVM.ExamName = todayExam.Title;
+                        attendExamVM.Message = "";
+                    }
+                    else
+                    {
+                        attendExamVM.Message = "You have already attended to this exam.";
                     }
                 }
+
+                return View(attendExamVM);
             }
+
+            return RedirectToAction("Login", "Account");
         }
     }
 }
