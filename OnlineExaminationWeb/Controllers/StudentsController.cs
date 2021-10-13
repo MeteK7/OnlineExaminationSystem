@@ -92,6 +92,14 @@ namespace OnlineExaminationWeb.Controllers
         public IActionResult ViewResult()
         {
             LoginViewModel loginSession = HttpContext.Session.Get<LoginViewModel>("loginvm");
+
+            if (loginSession!=null)
+            {
+                var model = _studentService.GetExamResults(Convert.ToInt32(loginSession));
+                return View(model);
+            }
+
+            return RedirectToAction("Login", "Account");
         }
     }
 }
