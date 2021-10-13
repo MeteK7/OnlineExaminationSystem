@@ -113,9 +113,11 @@ namespace OnlineExaminationWeb.Controllers
                 if (model.PictureFileName!=null)
                 {
                     model.PictureFileName = ConfigurationManager.GetFilePath() + model.PictureFileName;
-
                 }
+                model.CVFileName = ConfigurationManager.GetFilePath() + model.CVFileName;
+                return View(model);
             }
+            return RedirectToAction("Login", "Account");
         }
     }
 }
