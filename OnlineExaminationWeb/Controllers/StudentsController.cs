@@ -75,5 +75,23 @@ namespace OnlineExaminationWeb.Controllers
 
             return RedirectToAction("Login", "Account");
         }
+
+        [HttpPost]
+        public IActionResult AttendExam(AttendExamViewModel attendExamViewModel)
+        {
+            bool result = _studentService.SetExamResult(attendExamViewModel);
+            return RedirectToAction("AttendExam");
+        }
+
+        public IActionResult Result(string studentId)
+        {
+            var model = _studentService.GetExamResults(Convert.ToInt32(studentId));
+            return View(model);
+        }
+
+        public IActionResult ViewResult()
+        {
+            LoginViewModel loginSession = HttpContext.Session.Get<LoginViewModel>("loginvm");
+        }
     }
 }
