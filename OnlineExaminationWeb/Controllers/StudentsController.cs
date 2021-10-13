@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Protocols;
 using OnlineExaminationBLL.Services;
 using OnlineExaminationViewModels;
 using System;
@@ -100,6 +101,21 @@ namespace OnlineExaminationWeb.Controllers
             }
 
             return RedirectToAction("Login", "Account");
+        }
+
+        public IActionResult Profile()
+        {
+            LoginViewModel loginSession = HttpContext.Session.Get<LoginViewModel>("loginvm");
+
+            if (loginSession!=null)
+            {
+                var model = _studentService.GetStudentDetails(Convert.ToInt32(loginSession.Id));
+                if (model.PictureFileName!=null)
+                {
+                    model.PictureFileName = ConfigurationManager.GetFilePath() + model.PictureFileName;
+
+                }
+            }
         }
     }
 }
