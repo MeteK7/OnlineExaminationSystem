@@ -5,6 +5,7 @@ using OnlineExaminationBLL.Services;
 using OnlineExaminationViewModels;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -135,6 +136,17 @@ namespace OnlineExaminationWeb.Controllers
         }
 
         private string SaveStudentFile(IFormFile pictureFile)
+        {
+            if (pictureFile==null)
+            {
+                return string.Empty;
+            }
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/file");
+            return SaveFile(path, pictureFile);
+        }
+
+        private string SaveFile(string path, IFormFile pictureFile)
         {
             throw new NotImplementedException();
         }
