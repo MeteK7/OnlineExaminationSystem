@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Protocols;
 using OnlineExaminationBLL.Services;
 using OnlineExaminationViewModels;
@@ -118,6 +119,24 @@ namespace OnlineExaminationWeb.Controllers
                 return View(model);
             }
             return RedirectToAction("Login", "Account");
+        }
+
+        public IActionResult Profile([FromForm]StudentViewModel studentViewModel)
+        {
+            if (studentViewModel.PictureFileName != null)
+                studentViewModel.PictureFileName = SaveStudentFile(studentViewModel.PictureFile);
+
+            if(studentViewModel.CVFile!=null)
+                studentViewModel.PictureFileName= SaveStudentFile(studentViewModel.CVFile);
+
+            _studentService.UpdateAsync(studentViewModel);
+
+            return RedirectToAction("Profile");
+        }
+
+        private string SaveStudentFile(IFormFile pictureFile)
+        {
+            throw new NotImplementedException();
         }
     }
 }
