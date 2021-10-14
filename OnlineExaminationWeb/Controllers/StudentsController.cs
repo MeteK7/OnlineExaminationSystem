@@ -148,7 +148,23 @@ namespace OnlineExaminationWeb.Controllers
 
         private string SaveFile(string path, IFormFile pictureFile)
         {
-            throw new NotImplementedException();
+            if (!Directory.Exists(path)
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            var fileName = Guid.NewGuid().ToString() + "." + pictureFile.FileName.Split('.')
+                [pictureFile.FileName.Split('.').Length - 1];
+
+            path = Path.Combine(path, fileName);
+
+            using (Stream stream = new FileStream(path, FileMode.Create))
+            {
+                pictureFile.CopyTo(stream);
+            }
+
+            return fileName;
+
         }
     }
 }
