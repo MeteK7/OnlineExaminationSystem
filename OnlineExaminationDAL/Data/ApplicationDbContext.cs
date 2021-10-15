@@ -17,6 +17,14 @@ namespace OnlineExaminationDAL.Data
         {
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=DESKTOP-TL5BT8Q\\SQLEXPRESS;Database=OnlineExaminationDb;user id=sa;password=mg9R7psU;Trusted_Connection=True;MultipleActiveResultsSets=True;");
+            }
+        }
+
         public DbSet<ExamResults> ExamResults { get; set; }
         public DbSet<Exams> Exams { get; set; }
         public DbSet<Groups> Groups { get; set; }
