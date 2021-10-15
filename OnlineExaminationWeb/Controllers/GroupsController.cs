@@ -54,5 +54,15 @@ namespace OnlineExaminationWeb.Controllers
 
             return View(model);
         }
+
+        [HttpPost]
+        public IActionResult Details(GroupViewModel groupViewModel)
+        {
+            bool result = _studentService.SetGroupIdToStudents(groupViewModel);
+            if (result)
+                return RedirectToAction("Details", new { groupId = groupViewModel.Id });
+
+            return View(groupViewModel);
+        }
     }
 }
