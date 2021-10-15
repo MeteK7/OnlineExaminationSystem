@@ -40,9 +40,7 @@ namespace OnlineExaminationWeb.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var model = new ExamViewModel();
-            model.GroupList = _groupService.GetAllGroups();
-            return View(model);
+            return View(examViewModel);
         }
     }
 }
