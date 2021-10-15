@@ -3,3 +3,15 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfoInputs.cache
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfo.cs
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.CoreCompileInputs.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.deps.json
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\ref\OnlineExaminationBLL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationDAL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationViewModels.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationViewModels.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationDAL.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.CopyComplete
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\ref\OnlineExaminationBLL.dll
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.pdb

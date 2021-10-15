@@ -106,7 +106,7 @@ namespace OnlineExaminationBLL.Services
                         StudentId=studentId,
                         ExamName=exj.ex.Title,
                         TotalQuestion=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId==exj.ex.Id),
-                        CorrectAnswer=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId=exj.ex.Id && a.Answer==q.Answer),
+                        CorrectAnswer=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId==exj.ex.Id && a.Answer==q.Answer),
                         WrongAnswer=examResults.Count(a=>a.StudentsId==studentId && a.ExamsId==exj.ex.Id && a.Answer!=q.Answer)
                     });
 

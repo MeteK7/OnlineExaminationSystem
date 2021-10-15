@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xNDb80jgdAOca4EEJtr9DmjNxPBAKbMEG4vYMU8ePJX89nzRxVi+SOU2dEEDot1W6feIqyqExAJqOv0VIEkb2g==",
+  "dgSpecHash": "bXdXefN6VSU+BokXQy8K/SB4GHPJl0L1kBLQXvK/81xbIyGsvUGNdxQIzVMfdLgeq2ToopJO62YXX734lpxaMg==",
   "success": true,
   "projectFilePath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationBLL\\OnlineExaminationBLL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.8\\microsoft.entityframeworkcore.abstractions.5.0.8.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.8\\microsoft.entityframeworkcore.analyzers.5.0.8.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.11\\microsoft.aspnetcore.http.features.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.11\\microsoft.entityframeworkcore.analyzers.5.0.11.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",

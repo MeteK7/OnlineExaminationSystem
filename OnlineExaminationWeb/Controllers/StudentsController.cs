@@ -148,7 +148,7 @@ namespace OnlineExaminationWeb.Controllers
 
         private string SaveFile(string path, IFormFile pictureFile)
         {
-            if (!Directory.Exists(path)
+            if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }

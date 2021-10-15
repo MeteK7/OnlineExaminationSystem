@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+s1PIf2UUJwNctOmsrKZwsWNphJZa+rLGmQFo9Zk1bRZcvGaVfVgVwqVFq9LGjBKd0ECW3WEeRQHg0dhk8h2IA==",
+  "dgSpecHash": "Qg9/G+4tf0jsymDAXulPAgiXofos/T0/aK93q59wXfITHWHAD0lxPSpyQ1HAUHA2kqm7GAOECPvwkzCUBNexrg==",
   "success": true,
   "projectFilePath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.9\\microsoft.aspnetcore.http.features.5.0.9.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.8\\microsoft.entityframeworkcore.abstractions.5.0.8.nupkg.sha512",
-    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.8\\microsoft.entityframeworkcore.analyzers.5.0.8.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.11\\microsoft.aspnetcore.http.features.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",
+    "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.11\\microsoft.entityframeworkcore.analyzers.5.0.11.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\MeteK\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
