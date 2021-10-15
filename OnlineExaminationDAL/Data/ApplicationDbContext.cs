@@ -20,7 +20,7 @@ namespace OnlineExaminationDAL.Data
         public DbSet<ExamResults> ExamResults { get; set; }
         public DbSet<Exams> Exams { get; set; }
         public DbSet<Groups> Groups { get; set; }
-        public DbSet<QuestionAnswers> QnAs { get; set; }
+        public DbSet<QuestionAnswers> QuestionAnswers { get; set; }
         public DbSet<Students> Students { get; set; }
         public DbSet<Users> Users { get; set; }
 
