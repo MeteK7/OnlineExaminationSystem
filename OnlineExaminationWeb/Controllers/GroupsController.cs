@@ -40,5 +40,19 @@ namespace OnlineExaminationWeb.Controllers
 
             return View(groupViewModel);
         }
+
+        public IActionResult Details(string groupId)
+        {
+            var model = _groupService.GetById(Convert.ToInt32(groupId));
+            model.StudentCheckList = _studentService.GetAllStudents().Select(
+                std => new StudentCheckBoxListViewModel()
+                {
+                    Id = std.Id,
+                    Name = std.Name,
+                    Selected = std.GroupsId==Convert.ToInt32(groupId)
+                }).ToList();
+
+            return View(model);
+        }
     }
 }
