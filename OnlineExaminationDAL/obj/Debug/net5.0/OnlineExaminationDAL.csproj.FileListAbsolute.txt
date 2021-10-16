@@ -16,6 +16,7 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\ref\OnlineExaminationDAL.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.pdb
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.csproj.AssemblyReference.cache
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.AssemblyInfoInputs.cache
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.AssemblyInfo.cs
