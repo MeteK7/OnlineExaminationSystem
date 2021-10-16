@@ -21,7 +21,7 @@ namespace OnlineExaminationDAL.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-TL5BT8Q\\SQLEXPRESS;Database=OnlineExaminationDb;user id=sa;password=mg9R7psU;Trusted_Connection=True;MultipleActiveResultsSets=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-TL5BT8Q\\SQLEXPRESS;Database=OnlineExaminationDb;user id=sa;password=mg9R7psU;Trusted_Connection=True;MultipleActiveResultSets=True;");
             }
         }
 

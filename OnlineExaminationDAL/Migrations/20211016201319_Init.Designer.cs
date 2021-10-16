@@ -10,7 +10,7 @@ using OnlineExaminationDAL.Data;
 namespace OnlineExaminationDAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211015213602_Init")]
+    [Migration("20211016201319_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
