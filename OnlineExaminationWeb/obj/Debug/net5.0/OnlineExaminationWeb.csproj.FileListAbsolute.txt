@@ -162,3 +162,4 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\ref\OnlineExaminationWeb.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.pdb
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.genruntimeconfig.cache
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Users\Create.cshtml.g.cs
