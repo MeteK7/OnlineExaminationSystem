@@ -164,3 +164,4 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.genruntimeconfig.cache
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Users\Create.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Students\Index.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Students\Create.cshtml.g.cs
