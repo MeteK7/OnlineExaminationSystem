@@ -46,3 +46,14 @@
         </cs-pager>
     </div>
 </div>
+
+@section scripts{ 
+<script>
+    $(document).ready(function () {
+        $('#student-grid').DataTable({
+            "paging": false,
+            "filter": true
+        });
+    });
+</script>
+}
