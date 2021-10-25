@@ -44,6 +44,7 @@
         $("#print-pdf").click(function () {
             var element = document.getElementById('div-parent');
 
+            //Generating the PDF file:
             html2pdf().from(element).set({
                 margin: [30, 10, 5, 10],//top, left, button, right
                 pagebreak: { avoid: 'tr' },
