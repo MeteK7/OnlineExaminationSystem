@@ -1,0 +1,54 @@
+﻿@model IEnumerable<OnlineExaminationViewModels.ResultViewModel>
+
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h1>Student Exam Results</h1>
+
+<div id="div-parent">
+    <br />
+    <div>
+        <table id="grid-result"
+               class="table table-striped table-bordered dt-responsive nowrap"
+               width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Exam Name</th>
+                    <th>Total Questions</th>
+                    <th>Correct</th>
+                    <th>Wrong</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.ExamName</td>
+                    <td>@item.TotalQuestion</td>
+                    <td>@item.CorrectAnswer</td>
+                    <td>@item.WrongAnswer</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Student List</a>
+    <a id="print-pdf" class="btn btn-primary">Print</a>
+</div>
+
+@section scripts{ 
+    <script>
+        $("#print-pdf").click(function () {
+            var element = document.getElementById('div-parent');
+
+            html2pdf().from(element).set({
+                margin: [30, 10, 5, 10],//top, left, button, right
+                pagebreak: { avoid: 'tr' },
+                jsPDF: { orientation: 'landscape', unit: 'pt', format: 'letter', compressPDF: true }
+            }).save()
+        });
+    </script>
+}
