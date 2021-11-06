@@ -170,3 +170,4 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Students\Result.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Students\ViewResult.cshtml.g.cs
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\QuestionAnswer\Create.cshtml.g.cs
+C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\QuestionAnswer\Index.cshtml.g.cs

@@ -10,7 +10,7 @@
     <br />
     <a asp-action="Create" asp-controller="QuestionAnswer" class="btn btn-primary">Create</a>
     <div>
-        <table id="grid-questionanswer" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+        <table id="tbl-questionanswer" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Questions</th>
@@ -51,7 +51,7 @@
 @section script{
 <script>
     $(document).ready(function () {
-        $('grid-questionanswer').DataTable({
+        $('tbl-questionanswer').DataTable({
             "paging": false,
             "filter": true
         });
