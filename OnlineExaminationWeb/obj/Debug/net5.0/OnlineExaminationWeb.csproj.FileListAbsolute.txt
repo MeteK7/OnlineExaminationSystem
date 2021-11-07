@@ -350,3 +350,4 @@ F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\ref\On
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.pdb
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.genruntimeconfig.cache
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Exams\Index.cshtml.g.cs
+F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Exams\Create.cshtml.g.cs
