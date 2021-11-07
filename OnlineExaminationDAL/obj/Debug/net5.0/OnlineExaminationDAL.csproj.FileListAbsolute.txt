@@ -25,3 +25,6 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\ref\OnlineExaminationDAL.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.pdb
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.genruntimeconfig.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.runtimeconfig.json
+F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\bin\Debug\net5.0\OnlineExaminationDAL.runtimeconfig.dev.json
+F:\Projects\OnlineExaminationSystem\OnlineExaminationDAL\obj\Debug\net5.0\OnlineExaminationDAL.genruntimeconfig.cache

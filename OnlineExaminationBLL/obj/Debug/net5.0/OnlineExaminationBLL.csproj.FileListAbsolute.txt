@@ -15,3 +15,20 @@ C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminatio
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\ref\OnlineExaminationBLL.dll
 C:\Lessons\ASP.NET\Educational Examples\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.deps.json
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\ref\OnlineExaminationBLL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationBLL.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationDAL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationViewModels.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationViewModels.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\bin\Debug\net5.0\OnlineExaminationDAL.pdb
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.AssemblyReference.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfoInputs.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.AssemblyInfo.cs
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.CoreCompileInputs.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.csproj.CopyComplete
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\ref\OnlineExaminationBLL.dll
+F:\Projects\OnlineExaminationSystem\OnlineExaminationBLL\obj\Debug\net5.0\OnlineExaminationBLL.pdb
