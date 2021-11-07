@@ -349,3 +349,4 @@ F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Online
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\ref\OnlineExaminationWeb.dll
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.pdb
 F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\OnlineExaminationWeb.genruntimeconfig.cache
+F:\Projects\OnlineExaminationSystem\OnlineExaminationWeb\obj\Debug\net5.0\Razor\Views\Exams\Index.cshtml.g.cs
