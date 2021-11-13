@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj": {}
+    "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj": {
+    "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj",
         "projectName": "OnlineExaminationDAL",
-        "projectPath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\obj\\",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj",
+        "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MeteK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -82,24 +82,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj": {
+    "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
+        "projectUniqueName": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
         "projectName": "OnlineExaminationViewModels",
-        "projectPath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationViewModels\\obj\\",
+        "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\OnlineExaminationViewModels.csproj",
+        "packagesPath": "C:\\Users\\MeteK\\.nuget\\packages\\",
+        "outputPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MeteK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -114,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj": {
-                "projectPath": "F:\\Projects\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj"
+              "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj": {
+                "projectPath": "C:\\Lessons\\ASP.NET\\Educational Examples\\OnlineExaminationSystem\\OnlineExaminationDAL\\OnlineExaminationDAL.csproj"
               }
             }
           }
@@ -150,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

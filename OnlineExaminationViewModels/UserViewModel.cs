@@ -14,6 +14,24 @@ namespace OnlineExaminationViewModels
         {
 
         }
+
+        public int Id { get; set; }
+
+        [Required]
+        [Display(Name="Name")]
+        public string Name { get; set; }
+
+        [Required]
+        [Display(Name = "UserName")]
+        public string UserName { get; set; }
+
+        [Required]
+        public string Password { get; set; }
+
+        public int Role { get; set; }
+        public List<UserViewModel> UserList { get; set; }
+        public int TotalCount { get; set; }
+
         public UserViewModel(Users user)
         {
             Id = user.Id;
@@ -34,22 +52,5 @@ namespace OnlineExaminationViewModels
                 Role = userVM.Role
             };
         }
-
-        public int Id { get; set; }
-
-        [Required]
-        [Display(Name="Name")]
-        public string Name { get; set; }
-
-        [Required]
-        [Display(Name = "UserName")]
-        public string UserName { get; set; }
-
-        [Required]
-        public string Password { get; set; }
-
-        public int Role { get; set; }
-        public List<UserViewModel> UserList { get; set; }
-        public int TotalCount { get; set; }
     }
 }

@@ -35,6 +35,7 @@ namespace OnlineExaminationWeb
             services.AddTransient<IExamService, ExamService>();
             services.AddTransient<IQuestionAnswerService, QuestionAnswerService>();
             services.AddTransient<IAccountService, AccountService>();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +53,8 @@ namespace OnlineExaminationWeb
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 
