@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using OnlineExaminationDAL;
+using OnlineExaminationDAL.EntityModels;
 using OnlineExaminationDAL.UnitOfWork;
 using OnlineExaminationViewModels;
 using System;

@@ -1,4 +1,4 @@
-﻿using OnlineExaminationDAL;
+﻿using OnlineExaminationDAL.EntityModels;
 using OnlineExaminationViewModels;
 using System;
 using System.Collections.Generic;

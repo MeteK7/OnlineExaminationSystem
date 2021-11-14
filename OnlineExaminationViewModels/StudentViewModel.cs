@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using OnlineExaminationDAL;
+using OnlineExaminationDAL.EntityModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
